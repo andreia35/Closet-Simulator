@@ -1,0 +1,246 @@
+body {
+  background-image: url('../Imagens/fundo1.jpg');
+  margin:5%;
+  overflow-y: hidden;
+}
+	
+
+.titulos{
+  color: #474949;
+  font-size:40px;
+  bottom: 2px;
+  text-align: center;
+  font-family:'Arial Black'; 
+  margin-left:8%;
+}
+
+.subtitulo{
+  color: #2E3030;
+  font-size:30px;
+  bottom: 2px;
+  text-align: center;
+  font-family:'Segoe UI'; 
+}
+
+.inicio{
+	color: #1E1F1F;
+  font-size: 20px;
+  font-family:'Segoe UI Light'; 
+}
+
+
+.texto{
+  color: #1E1F1F;
+  font-size: 15px;
+  font-family:'Segoe UI Light'; 
+}
+
+.next{
+	font-family: 'Segoe UI Semibold';
+	font-size: 20px;
+	margin-left: 20%;
+	position: absolute;
+	right: 5%;
+	text-align:right;
+	color:#B76E79;
+}
+
+.left{
+	font-family: 'Segoe UI Semibold';
+	font-size: 20px;
+	position: absolute;
+	text-align:left;
+	color:#B76E79;
+}
+
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  color:#B76E79;
+  width: 30%;
+  text-align:left ;
+  padding: 15px 5px;
+  margin: 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family:'Segoe UI';
+  position: absolute; 
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #D0CCCA;
+  padding: 13px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  font-family:'Segoe UI Semibold';
+  border-radius: 20px;
+  color:#1E1F1F;
+  margin-left:-65%;
+}
+
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -4%;
+  margin-bottom:-7%;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px;
+  margin-top:3%;
+  margin-bottom:-10%;
+  margin-left:28%;
+}
+
+.right{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.box{
+	position: absolute;
+	font-family:'Segoe UI'; 
+	color: #2E3030;
+	font-size:30px;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+.box select{
+	background:transparent ;
+	color: #1E1F1F;
+	padding: 7%;
+	width: 105%;
+	height: 10%;
+	border: none;
+	font-size:15px;
+	font-family:'Segoe UI Light'; 
+	
+}
+
+.hidden{
+	display: none;
+	color: #1E1F1F;
+	font-size: 15px;
+	font-family:'Segoe UI';
+	text-align:left;
+}
+
+td{
+	text-align:center;
+}
+
+
+
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #B76E79;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+
+.hero.is-success {
+  background: #f2f7fa;
+}
+.hero .nav, .hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+input {
+  font-weight: 300;
+
+}
+
+
+@media (max-width: 550px) {
+
+.logoindex{
+	width:90%;
+	left:5%;
+	top:0%;
+	position:center;
+	position: absolute;
+	
+}
+
+.titlerespons{
+	width:90%;
+	left:0%;
+	top:35%;
+	position: absolute;
+}
+
+.textrespons{
+	width:95%;
+	left:0%;
+	top:45%;
+	position: absolute;
+}
+
+.botaorespons{
+	width:95%;
+	left:0%;
+	top:85%;
+	position: absolute;
+}
+
+}
+

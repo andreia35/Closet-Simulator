@@ -1,0 +1,37 @@
+CREATE TABLE utilizador (
+	id_utilizador bigint AUTO_INCREMENT,
+	email	 varchar(512) UNIQUE NOT NULL,
+	password	 varchar(512) NOT NULL,
+	primeiro_nome varchar(512) NOT NULL,
+	ultimo_nome	 varchar(512) NOT NULL,
+	PRIMARY KEY(id_utilizador)
+);
+
+CREATE TABLE roupa (
+	id_roupa		 bigint AUTO_INCREMENT,
+	id_utilizador		 bigint NOT NULL,
+	imagem			 longblob NOT NULL,
+	id_estacao		 smallint NOT NULL,
+	id_tipo			 bigint NOT NULL,
+	tipo_id_tipo		 bigint NOT NULL,
+	estacao_id_estacao	 smallint NOT NULL,
+	utilizador_id_utilizador bigint NOT NULL,
+	PRIMARY KEY(id_roupa)
+);
+
+CREATE TABLE estacao (
+	id_estacao	 smallint AUTO_INCREMENT,
+	nome_estacao varchar(512) NOT NULL,
+	PRIMARY KEY(id_estacao)
+);
+
+CREATE TABLE tipo (
+	id_tipo	 bigint AUTO_INCREMENT,
+	nome_tipo varchar(512),
+	PRIMARY KEY(id_tipo)
+);
+
+ALTER TABLE roupa ADD CONSTRAINT roupa_fk1 FOREIGN KEY (tipo_id_tipo) REFERENCES tipo(id_tipo);
+ALTER TABLE roupa ADD CONSTRAINT roupa_fk2 FOREIGN KEY (estacao_id_estacao) REFERENCES estacao(id_estacao);
+ALTER TABLE roupa ADD CONSTRAINT roupa_fk3 FOREIGN KEY (utilizador_id_utilizador) REFERENCES utilizador(id_utilizador);
+
